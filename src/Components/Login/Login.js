@@ -1,4 +1,4 @@
-import ReactDOM from 'react';
+
 import React, { useContext, useState } from 'react';
 import firebase from "firebase/app";
 import "firebase/auth";
@@ -39,10 +39,10 @@ const Login = () => {
                 setLoggedInUser(signedInUser);
                 history.replace(from);
             }).catch((error) => {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                var email = error.email;
-                var credential = error.credential;
+                // var errorCode = error.code;
+                // var errorMessage = error.message;
+                // var email = error.email;
+                // var credential = error.credential;
             });
     }
 
@@ -51,17 +51,17 @@ const Login = () => {
             .auth()
             .signInWithPopup(fbProvider)
             .then((result) => {
-                var credential = result.credential;
+                // var credential = result.credential;
                 var user = result.user;
-                var accessToken = credential.accessToken;
+                // var accessToken = credential.accessToken;
                 setLoggedInUser(user)
                 history.replace(from);
             })
             .catch((error) => {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                var email = error.email;
-                var credential = error.credential;
+                // var errorCode = error.code;
+                // var errorMessage = error.message;
+                // var email = error.email;
+                // var credential = error.credential;
                 
             });
     }
@@ -87,11 +87,11 @@ const Login = () => {
             firebase.auth().createUserWithEmailAndPassword(provider)
                
                 .then((result) => {
-                    const newUserInfo = { ...user };
+                    const newUserInfo = { ...user};
                   
-                    var credential = result.credential;
+                    // var credential = result.credential;
                     var user = result.user;
-                    var accessToken = credential.accessToken;
+                    // var accessToken = credential.accessToken;
                     setLoggedInUser(newUserInfo)
                     history.replace(from)
                 })
