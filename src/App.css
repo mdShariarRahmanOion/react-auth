@@ -1,0 +1,25 @@
+
+.App {
+  text-align: center;
+}
+.img{
+  background-image: url(./Utilitis/images/Bg.png);
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}

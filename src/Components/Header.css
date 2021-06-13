@@ -1,0 +1,18 @@
+.container Nav a{
+    margin: 20px;
+    font-size: 20px;
+    color: black;
+    
+}
+.container Nav{
+    padding-left: 80px;
+}
+.container Nav a:hover{
+    text-decoration: none;
+}
+.btn{
+    height: 40px;
+    width: 80px;
+    margin-top: 20px;
+    border-radius: 10px;
+}

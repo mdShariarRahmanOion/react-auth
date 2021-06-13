@@ -1,0 +1,33 @@
+.form-section{
+    width: 400px;
+    height: 300px;
+    background-color:#fafafa;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.input{
+    border: 0;
+    width: 300px;
+}
+.login{
+    width:250px;
+    background-color: orange;
+    color: white;
+    border: none;
+   
+}
+.hr{
+    width: 150px;
+    display: inline-block;
+}
+.signIn{
+    border: none;
+    background-color: #fafafa;
+    width: 300px;
+    margin: 5px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
