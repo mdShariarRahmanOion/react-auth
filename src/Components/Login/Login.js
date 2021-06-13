@@ -51,13 +51,9 @@ const Login = () => {
             .auth()
             .signInWithPopup(fbProvider)
             .then((result) => {
-                // const { displayName, email } = result.user;
-                // const signedInUser = { name: displayName, email }
                 var credential = result.credential;
                 var user = result.user;
                 var accessToken = credential.accessToken;
-                // setLoggedInUser(signedInUser)
-                // history.replace(from);
                 setLoggedInUser(user)
                 history.replace(from);
             })
@@ -66,7 +62,7 @@ const Login = () => {
                 var errorMessage = error.message;
                 var email = error.email;
                 var credential = error.credential;
-                // console.log(errorCode, errorMessage, email, credential)
+                
             });
     }
     const handleBlur = (e) => {
@@ -89,12 +85,10 @@ const Login = () => {
     const handleLogin = (e) => {
         if (user.email && user.password) {
             firebase.auth().createUserWithEmailAndPassword(provider)
-                // .signInWithPopup(provider)
+               
                 .then((result) => {
                     const newUserInfo = { ...user };
-                    // newUserInfo.error = '';
-                    // newUserInfo.success = true;
-                    // setUser(newUserInfo);
+                  
                     var credential = result.credential;
                     var user = result.user;
                     var accessToken = credential.accessToken;
@@ -111,7 +105,7 @@ const Login = () => {
         e.preventDefault();
     }
     const handleClick = () => {
-        // <Link to="/destination"></Link>
+     
         setLoggedInUser(user);
         history.replace(from);
     }
