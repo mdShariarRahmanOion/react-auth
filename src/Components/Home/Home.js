@@ -1,9 +1,5 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-// import bike from '../../urban-riders-main/images/bike.png';
-// import car from '../../urban-riders-main/images/car.png';
-// import bus from '../../urban-riders-main/images/bus.png';
-// import train from '../../urban-riders-main/images/train.png';
 import bike from '../../Utilitis/images/bike.png';
 import car from '../../Utilitis/images/car.png';
 import bus from '../../Utilitis/images/bus.png';
