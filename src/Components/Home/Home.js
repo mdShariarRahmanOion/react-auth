@@ -4,9 +4,8 @@ import bike from '../../Utilitis/images/bike.png';
 import car from '../../Utilitis/images/car.png';
 import bus from '../../Utilitis/images/bus.png';
 import train from '../../Utilitis/images/train.png';
-
-import './Home.css';
 import { Link } from 'react-router-dom';
+import './Home.css';
 const Home = () => {
     return (
         <div>
